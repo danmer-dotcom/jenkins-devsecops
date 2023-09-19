@@ -39,7 +39,7 @@ pipeline {
                     def scanSpeed = 'fast'
                     
                     appscan application: applicationId, credentials: credentialsId, name: appName,
-                            scanner: static_analyzer(hasOptions: false, scanSpeed: scanSpeed, target: "${env.WORKSPACE}"+'maven-wrapper-example-0.0.1-SNAPSHOT.jar'),
+                            scanner: static_analyzer(hasOptions: false, scanSpeed: scanSpeed, target: "${env.WORKSPACE}"+"test/target/"+'testmaven-wrapper-example-0.0.1-SNAPSHOT.jar'),
                             type: 'Static Analyzer'
                 }
             }

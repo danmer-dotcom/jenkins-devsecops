@@ -30,7 +30,7 @@ pipeline {
         stage('Esegui AppScan') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'sast-key-secret', variable: 'SAST-KEY-SECRET')],[string(credentialsId: 'sast-api-key-secret', variable: 'SAST-API-KEY-SECRET')]) {
+                    withCredentials([string(credentialsId: 'sast-key-secret', variable: 'SAST-KEY-SECRET'),string(credentialsId: 'sast-api-key-secret', variable: 'SAST-API-KEY-SECRET')]) {
                     def apiKey = 'SAST-API-KEY-SECRET'
                     def keySecret = 'SAST-KEY-SECRET'
                     def applicationId = '6e5d0317-bd88-41a7-82af-00bab1075a48'

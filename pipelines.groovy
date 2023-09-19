@@ -4,7 +4,7 @@ pipelineJob('DAST/test') {
       scm {
         git {
           remote {
-            url('https://github.com/rafstef/demo-dast.git')
+            url('https://github.com/rafstef/jenkins-devsecops.git')
             scriptPath("pipelines/dast.groovy")
           }
           branch('*/master')
@@ -20,7 +20,7 @@ pipelineJob('SAST/test') {
       scm {
         git {
           remote {
-            url('https://github.com/rafstef/demo-dast.git')
+            url('https://github.com/rafstef/jenkins-devsecops.git')
             scriptPath("pipelines/sast.groovy")
           }
           branch('*/master')
@@ -36,7 +36,7 @@ pipelineJob('DT/test') {
       scm {
         git {
           remote {
-            url('https://github.com/rafstef/demo-dast.git')
+            url('https://github.com/rafstef/jenkins-devsecops.git')
             scriptPath("pipelines/dt.groovy")
           }
           branch('*/master')

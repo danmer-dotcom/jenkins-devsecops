@@ -1,4 +1,4 @@
-pipelineJob('DAST/test') {
+pipelineJob('DAST/test-dast') {
   definition {
     cpsScm {
       scm {
@@ -14,7 +14,7 @@ pipelineJob('DAST/test') {
     }
   }
 }
-pipelineJob('SAST/test') {
+pipelineJob('SAST/test-sast') {
   definition {
     cpsScm {
       scm {
@@ -30,7 +30,7 @@ pipelineJob('SAST/test') {
     }
   }
 }
-pipelineJob('DT/test') {
+pipelineJob('DT/test-dt') {
   definition {
     cpsScm {
       scm {

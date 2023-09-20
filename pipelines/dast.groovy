@@ -1,5 +1,5 @@
 pipeline {
-    agent { node('windows') }
+    agent { node('windows-node') }
     stages {
         stage('APPScan: DAST demo') {
             steps {
